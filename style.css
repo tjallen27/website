@@ -1,0 +1,281 @@
+body { font-weight: 300; color: #333; font-family: 'Open Sans', sans-serif;}
+
+header {
+	width: 1090px;
+	margin: 0 auto;
+}
+header h1 {
+	display: inline;
+	margin-left: 55px;
+	text-transform: uppercase;
+	letter-spacing: 15px;
+  font-weight: 300;
+}
+header .sub-head {
+	display: inline;
+	line-height: 2.5em;
+	float:right;
+	margin-right: 20px;
+	vertical-align: bottom;
+}
+main {
+	width: 1200px;
+	margin: 0 auto;
+}
+.fa-3x {
+  color: #333;
+}
+.contact
+/* TILE STYLING */
+.container {
+	width: 1000px;
+	float: right;
+}
+.tile {
+	width: 240px;
+	height: 240px;
+	border: solid 5px #fff;
+	border-radius: 25px;
+	float: left;
+	margin: 5px;
+	transition: 0.5s ease;
+  display: none;
+}
+.show {
+  display: block;
+}
+.tile:hover {
+	background: #fff;
+	cursor: pointer;
+}
+.tile.chart,
+.tile.bio {
+	width: 514px;
+}
+.tile:hover:nth-child(even) {
+	transform: rotate(2deg);
+}
+
+.tile:hover:nth-child(odd) {
+	transform: rotate(-2deg);
+}
+.tile-content {
+  text-align: center;
+  width: 100%;
+  height: 100%;
+}
+.tile-content:hover {
+  background: black;
+  opacity: 0.1;
+  border-radius: 15px;
+}
+.tile-content h2 {
+}
+.tile-content p {
+}
+
+.tile.bio .tile-content-bio{
+  text-align: center;
+  padding-top: 70px;
+  letter-spacing: 0.7px;
+}
+/* TILE BACKGROUNDS */
+.tile.barzurk {
+  background: url('./assets/barzurk.png');
+  background-size: contain;
+}
+.tile.solace {
+  background: url('./assets/solace_new2.png');
+  background-size: cover;
+  background-position: 40%;
+}
+.tile.printshop {
+  background: url('./assets/printshop.png');
+  background-size: cover;
+  background-position: 40%;
+}
+.tile.server {
+  background: url('./assets/node_server.png');
+  background-size: cover;
+}
+.tile.chart {
+  background: url('./assets/chart_new.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.tile.react_search {
+  background: url('./assets/react_search.png');
+  background-size: cover;
+}
+.tile.pineapple {
+  background: url('./assets/pineapple.png');
+  background-size: cover;
+}
+.tile.rfm {
+  background: url('./assets/rfm.png');
+  background-size: cover;
+}
+.tile.rspec {
+  background: url('./assets/rspec.png');
+  background-size: contain;
+}
+
+
+/* ICON STYLING */
+.contact {
+	margin-top: 120px;
+	height: 700px;
+	width: 100px;
+	float:left;
+	z-index: 999;
+}
+.contact li {
+	margin-bottom: 120px;
+	margin-left: -15px;
+	list-style: none;
+	transition: 0.25s ease;
+}
+.contact li a {
+	color: #222;
+	text-decoration: none;
+}
+.contact li:hover {
+	transform: scale(1.2);
+}
+
+/* BUTTONS */
+#myBtnContainer {
+  margin: 20px auto 10px;
+  max-width: 800px;
+  text-align: center;
+}
+.btn {
+  font-weight: 300;
+  letter-spacing: 0.8px;
+  text-transform: lowercase;
+  padding: 10px 15px;
+  border: none;
+  background: rgba(50, 50, 250, 0.8);
+  color: #fff;
+  border-radius: 5px;
+}
+.btn:active {
+  background: rgba(50, 50, 250, 0.5);
+}
+.btn:focus,
+.btn:hover {
+  outline: none;
+  cursor: pointer;
+  background: rgba(50, 50, 250, 0.5);
+}
+
+/* LOADER */
+#loading {
+   width: 100%;
+   height: 100%;
+   top: 0;
+   left: 0;
+   position: fixed;
+   opacity: 1;
+   background-color: #fff;
+   z-index: 99;
+   text-align: center;
+}
+
+@keyframes spin {
+    from {transform:rotate(0deg);}
+    to {transform:rotate(360deg);}
+}
+
+#loading-image {
+	position: absolute;
+	margin-left: auto;
+	margin-right: auto;
+	top: 40%;
+	left: 0;
+	right: 0;
+	border: 10px solid transparent;
+	border-top: 10px solid #333;
+	border-bottom: 10px solid #777;
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	animation: spin 1.2s linear infinite;
+	transform: translate(-50%);
+}
+
+/* MEDIA QUERIES */
+@media screen and (max-width: 1185px) {
+	header {
+		width: 550px;
+		margin: 0 auto;
+	}
+	header h1 {
+		margin-left: 10px;
+	}
+	header .sub-head {
+		float: left;
+		margin-left: 10px;
+	}
+	.contact {
+		width: 550px;
+		margin: 0;
+		height: 100px;
+	}
+	.contact li {
+		display: inline;
+		float: left;
+		margin-right: 65px;
+		margin-left: 50px;
+	}
+	.contact li a {
+		text-align: center;
+	}
+	main {
+		width: 550px;
+		margin: 0 auto;
+	}
+}
+
+@media screen and (max-width: 550px) {
+	main,
+  .container {
+		width: 340px;
+		margin: 0 auto;
+	}
+	header h1 {
+		margin-left: 0;
+    font-size: 1.5em;
+	}
+	header .sub-head {
+		font-size: 0.75em;
+		margin-left: 0;
+	}
+  .tile {
+		width: 150px;
+		height: 150px;
+	}
+  .tile.bio {
+    height: 100px;
+  }
+  .tile.codepen {
+    background-position: left;
+  }
+	.tile:nth-child(5n + 3) {
+		width: 330px;
+	}
+  .tile.bio .tile-content-bio{
+    text-align: center;
+    padding: 0;
+    letter-spacing: 0.7px;
+    font-size: 0.8em;
+    max-width: 300px;
+  }
+	.contact li {
+		display: inline;
+		float: left;
+		margin-right: 40px;
+		margin-left: 10px;
+	}
+}
