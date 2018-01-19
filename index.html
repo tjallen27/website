@@ -4,13 +4,13 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400" rel="stylesheet">
+    <!-- in your header -->
+    <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
 		<link rel="stylesheet" href="style.css">
-		<script
-  src="https://code.jquery.com/jquery-3.2.1.min.js"
+		<script src="https://code.jquery.com/jquery-3.2.1.min.js"
   integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
   crossorigin="anonymous"></script>
 		<script defer src="https://use.fontawesome.com/releases/v5.0.3/js/all.js"></script>
-
 		<title>THOMAS ALLEN</title>
 	</head>
 	<body>
@@ -33,14 +33,14 @@
 			<div class="container">
         <div id="myBtnContainer">
         <button class="btn active" onclick="filterSelection('all')">Show all</button>
-        <button class="btn" onclick="filterSelection('javascript')">Javascript</button>
-        <button class="btn" onclick="filterSelection('node')">Node</button>
-        <button class="btn" onclick="filterSelection('angular')">Angular</button>
-        <button class="btn" onclick="filterSelection('react')">React</button>
-        <button class="btn" onclick="filterSelection('jquery')">JQuery</button>
-        <button class="btn" onclick="filterSelection('ruby')">Ruby</button>
-        <button class="btn" onclick="filterSelection('rails')">Ruby on Rails</button>
-        <button class="btn" onclick="filterSelection('codepen')">Codepen</button>
+        <button class="btn" onclick="filterSelection('javascript')"><i class="devicon-javascript-plain"></i></button>
+        <button class="btn" onclick="filterSelection('node')"><i class="devicon-nodejs-plain"></i></button>
+        <button class="btn" onclick="filterSelection('angular')"><i class="devicon-angularjs-plain"></i></button>
+        <button class="btn" onclick="filterSelection('react')"><i class="devicon-react-original"></i></button>
+        <button class="btn" onclick="filterSelection('jquery')"><i class="devicon-jquery-plain"></i></button>
+        <button class="btn" onclick="filterSelection('ruby')"><i class="devicon-ruby-plain"></i></button>
+        <button class="btn" onclick="filterSelection('rails')"><i class="devicon-rails-plain"></i></button>
+        <button class="btn" onclick="filterSelection('codepen')"><i class="fab fa-codepen"></i></button>
       </div>
 				<a href="https://intense-fortress-27919.herokuapp.com/" target="_blank">
           <div class="tile javascript node angular barzurk">
@@ -105,10 +105,10 @@
 		</main>
     <script src="app.js" charset="utf-8"></script>
 	</body>
-	<script language="javascript" type="text/javascript">
+	<!-- <script language="javascript" type="text/javascript">
   // FAKE LOADER...
      $(window).on('load', function(){
      	$('#loading').delay(800).fadeOut(300);
 	   });
-	</script>
+	</script> -->
 </html>
