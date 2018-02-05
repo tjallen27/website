@@ -1,114 +1,56 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400" rel="stylesheet">
-    <!-- in your header -->
-    <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
-		<link rel="stylesheet" href="style.css">
-		<script src="https://code.jquery.com/jquery-3.2.1.min.js"
-  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
-  crossorigin="anonymous"></script>
-		<script defer src="https://use.fontawesome.com/releases/v5.0.3/js/all.js"></script>
-		<title>THOMAS ALLEN</title>
-	</head>
-	<body>
-		<div id="loading">
-		  <div id="loading-image" alt="Loading..."></div>
-		</div>
-		<header>
-			<h1>THOMAS ALLEN</h1>
-			<div class="sub-head">Front End Developer @WCRS. WDI Graduate @GeneralAssembly.</div>
-		</header>
-
-		<main>
-			<div class="contact">
-				<ul>
-					<li><a href="https://github.com/tjallen27" target="_blank"><i class="fab fa-github fa-3x"></i></a></li>
-					<li><a href="https://www.linkedin.com/in/tjallen27/" target="_blank"><i class="fab fa-linkedin fa-3x"></i></a></li>
-					<li><a href="mailto:tjallen91@hotmail.co.uk?Subject=Well%20hello%20there!"><i class="far fa-envelope fa-3x"></i></a></li>
-				</ul>
-			</div>
-			<div class="container">
-        <div id="myBtnContainer">
-        <button class="btn active" onclick="filterSelection('all')">Show all</button>
-        <button class="btn" onclick="filterSelection('javascript')"><i class="devicon-javascript-plain"></i></button>
-        <button class="btn" onclick="filterSelection('node')"><i class="devicon-nodejs-plain"></i></button>
-        <button class="btn" onclick="filterSelection('angular')"><i class="devicon-angularjs-plain"></i></button>
-        <button class="btn" onclick="filterSelection('react')"><i class="devicon-react-original"></i></button>
-        <button class="btn" onclick="filterSelection('jquery')"><i class="devicon-jquery-plain"></i></button>
-        <button class="btn" onclick="filterSelection('ruby')"><i class="devicon-ruby-plain"></i></button>
-        <button class="btn" onclick="filterSelection('rails')"><i class="devicon-rails-plain"></i></button>
-        <button class="btn" onclick="filterSelection('codepen')"><i class="fab fa-codepen"></i></button>
+  <head>
+    <meta charset="utf-8">
+    <title>T.A.</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+          <h3>Thomas Allen</h3>
+          <p>Developer. Here are some things i'm creating:</p>
       </div>
-				<a href="https://intense-fortress-27919.herokuapp.com/" target="_blank">
-          <div class="tile javascript node angular barzurk">
-            <div class="tile-content">
-            </div>
+      <div class="row">
+          <div class="tile col-sm-6">
+              <h2>Stripe Subscription</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis fermentum sagittis imperdiet. Nam ut nulla nec nibh tincidunt semper. </p>
           </div>
-        </a>
-        <a href="https://quiet-earth-60902.herokuapp.com/" target="_blank">
-  				<div class="tile ruby rails angular solace">
-            <div class="tile-content">
-            </div>
-  				</div>
-        </a>
-				<div class="tile bio">
-          <div class="tile-content-bio">
-            <p>When I am not coding, I am an avid guitarist and I also love producing electronic music. I also love painting and surfing and try and get in a few trips to the coast each year.</p>
+          <div class="tile col-sm-6 img1">
+              <div class="img-overlay">
+                  <a href="#" target="_blank">
+                  <i class="fas fa-external-link-alt"></i>
+              </a>
+              </div>
           </div>
-				</div>
-        <a href="https://boiling-sands-25313.herokuapp.com/" target="_blank">
-				<div class="tile ruby rails angular javascript printshop">
-          <div class="tile-content">
+      </div>
+      <div class="row">
+          <div class="tile col-sm-6">
+              <h2>Barzurk</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis fermentum sagittis imperdiet. Nam ut nulla nec nibh tincidunt semper.</p>
           </div>
-				</div>
-      </a>
-        <a href="https://github.com/tjallen27/basic-node-api/blob/master/server.js" target="_blank">
-				<div class="tile node javascript server">
-          <div class="tile-content">
+          <div class="tile col-sm-6 img2">
+              <div class="img-overlay">
+                  <a href="#" target="_blank">
+                  <i class="fas fa-external-link-alt"></i>
+              </a>
+              </div>
           </div>
-				</div>
-      </a>
-        <a href="https://github.com/tjallen27/ecommerce-app-test" target="_blank">
-        <div class="tile ruby rails rfm">
-          <div class="tile-content">
+      </div>
+      <div class="row">
+          <div class="tile col-sm-6">
+              <h2>Solace Property Rental</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis fermentum sagittis imperdiet. Nam ut nulla nec nibh tincidunt semper.</p>
           </div>
-				</div>
-      </a>
-        <a href="https://github.com/tjallen27/react-search-app" target="_blank">
-				<div class="tile react javascript react_search">
-          <div class="tile-content">
+          <div class="tile col-sm-6 img3">
+              <div class="img-overlay">
+                  <a href="#" target="_blank">
+                  <i class="fas fa-external-link-alt"></i>
+              </a>
+              </div>
           </div>
-				</div>
-      </a>
-        <a href="https://codepen.io/thomas-allen/full/Eopppo/" target="_blank">
-				<div class="tile javascript codepen chart">
-          <div class="tile-content">
-          </div>
-				</div>
-      </a>
-        <a href="https://codepen.io/thomas-allen/full/mpEJPJ/" target="_blank">
-				<div class="tile jquery codepen pineapple">
-          <div class="tile-content">
-          </div>
-				</div>
-      </a>
-        <a href="https://github.com/tjallen27/RSpec_Unit_Testing" target="_blank">
-        <div class="tile ruby rspec">
-          <div class="tile-content">
-          </div>
-        </div>
-      </a>
-			</div>
-		</main>
-    <script src="app.js" charset="utf-8"></script>
-	</body>
-	<!-- <script language="javascript" type="text/javascript">
-  // FAKE LOADER...
-     $(window).on('load', function(){
-     	$('#loading').delay(800).fadeOut(300);
-	   });
-	</script> -->
+      </div>
+  </div>
+  </body>
 </html>
