@@ -6,6 +6,7 @@
     font-size: 14px;
     font-weight: 300;
     padding: 0 20px;
+    margin: 0;
 }
 .container {
     max-width: 700px;
@@ -19,7 +20,7 @@
     line-height: 20px;
     text-align: right;
     margin: 10px 0;
-    padding: 80px 20px 0 50px;
+    padding: 20px 20px 0 50px;
     border-radius: 10px;
 }
 
@@ -71,11 +72,16 @@
 @media screen and (max-width: 575px) {
     .tile {
         text-align: left;
-        padding: 80px 10px 0;
-        margin-bottom: -60px;
+        padding: 40px 10px 0;
         border-radius: 0;
     }
     .img-overlay {
         display: none;
+    }
+    .img1,
+    .img2,
+    .img3 {
+      margin-top: -120px;
+      margin-bottom: 20px;
     }
 }
