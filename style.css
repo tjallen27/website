@@ -20,6 +20,11 @@ ul li {
 ul a {
   color: #53f6a0;
 }
+.header {
+  max-width: 390px;
+  margin: 0 auto;
+  text-align: center;
+}
 .container {
     max-width: 700px;
     margin: 0 auto;
@@ -32,10 +37,12 @@ ul a {
     line-height: 20px;
     text-align: right;
     margin: 10px 0;
-    padding: 20px 20px 0 50px;
+    padding: 0 20px 0 50px;
     border-radius: 10px;
 }
-
+.row {
+  
+}
 .img1 {
     background: url("./assets/stripe.png");
     background-position: 10%s;
